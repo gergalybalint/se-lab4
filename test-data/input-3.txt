@@ -1,0 +1,5 @@
+# ALL must fire both successful stores in one command; the following SINGLE
+# command checks that neither store still has a torpedo.
+GT4500,1,0,1,0
+TORPEDO,ALL
+TORPEDO,SINGLE

@@ -1,0 +1,7 @@
+# SINGLE fires the primary first, then keeps using it when the next store
+# (secondary) is empty. ALL also succeeds when the primary store is empty.
+GT4500,2,0,0,0
+TORPEDO,SINGLE
+TORPEDO,SINGLE
+GT4500,0,0,1,0
+TORPEDO,ALL

@@ -1,6 +1,7 @@
 package hu.bme.mit.spaceship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -16,5 +17,23 @@ class TorpedoStoreTest {
 
         // Assert
         assertEquals(true, result);
+    }
+
+    @Test
+    void fire_ZeroTorpedoes_Throws() {
+        // Arrange
+        TorpedoStore store = new TorpedoStore(1);
+
+        // Act and Assert
+        assertThrows(IllegalArgumentException.class, () -> store.fire(0));
+    }
+
+    @Test
+    void fire_MoreTorpedoesThanAvailable_Throws() {
+        // Arrange
+        TorpedoStore store = new TorpedoStore(1);
+
+        // Act and Assert
+        assertThrows(IllegalArgumentException.class, () -> store.fire(2));
     }
 }

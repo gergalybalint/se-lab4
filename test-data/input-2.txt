@@ -1,0 +1,5 @@
+# The first SINGLE command must fail rather than falling back to the ready
+# secondary store. The second command confirms the next call alternates to it.
+GT4500,1,1,1,0
+TORPEDO,SINGLE
+TORPEDO,SINGLE
