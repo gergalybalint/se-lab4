@@ -1,0 +1,4 @@
+# ALL must still try the secondary store when the primary is guaranteed to
+# fail. Its successful shot makes the overall command successful.
+GT4500,1,1,1,0
+TORPEDO,ALL

@@ -1,0 +1,8 @@
+# SINGLE starts with the primary store, alternates to secondary, and falls back
+# to secondary when the next store (primary) is empty. The final command checks
+# that firing fails after both stores are empty.
+GT4500,1,0,2,0
+TORPEDO,SINGLE
+TORPEDO,SINGLE
+TORPEDO,SINGLE
+TORPEDO,SINGLE

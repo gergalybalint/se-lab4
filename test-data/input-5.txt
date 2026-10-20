@@ -1,0 +1,4 @@
+# When both stores are guaranteed to fail, ALL must report that no torpedo
+# fired successfully.
+GT4500,1,1,1,1
+TORPEDO,ALL
